@@ -1,0 +1,72 @@
+//Name				: Christopher Leong
+//WSU ID			: G993M627	
+//Lab #				: 7
+//Description		: 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int A[3][3], B[3][3], C[3][3];
+	
+	cout << "Please enter the elements in matrix A: \t";
+	for (int row = 0; row <= 2; row++)
+	{
+		for (int col = 0; col <= 2; col++)
+		{
+			cin >> A[row][col];
+		}
+	}
+
+	for (int row = 0; row <= 2; row++)
+	{
+		for (int col = 0; col <= 2; col++)
+		{
+			cout << "Matrix A is: " << endl;
+			cout << A[row][col] << "\t";
+		}
+		cout << endl;
+	}
+
+	cout << "Please enter the elements in matrix B: \t";
+	for (int row = 0; row <= 2; row++)
+	{
+		for (int col = 0; col <= 2; col++)
+		{
+			cin >> B[row][col];
+		}
+	}
+
+	for (int row = 0; row <= 2; row++)
+	{
+		for (int col = 0; col <= 2; col++)
+		{
+			cout << "Matrix B is: " << endl;
+			cout << B[row][col] << "\t";
+		}
+		cout << endl;
+	}
+
+	cout << endl;
+
+	for (int row = 0; row <= 2; row++)
+	{
+		for (int col = 0; col <= 2; col++)
+		{
+			C[row][col] = A[row][col] + B[row][col];
+		}
+	}
+
+	for (int row = 0; row <= 2; row++)
+	{
+		for (int col = 0; col <= 2; col++)
+		{
+			cout << "Matrix C is as below: " << endl;
+			cout << C[row][col] << "\t";
+		}
+		cout << endl;
+	}
+	return 0;
+}
